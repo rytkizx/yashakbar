@@ -1,0 +1,17 @@
+.jumbotron {
+    padding-top: 6em;
+    background-color: #00ffff;
+}
+
+#project {
+    background-color: #00ffff;
+}
+.card-text {
+    text-align: justify;
+}
+.col-md-5 p {
+    text-align: justify;
+}
+section {
+    padding-top: 5em;
+}
