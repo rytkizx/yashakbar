@@ -9,9 +9,23 @@
 .card-text {
     text-align: justify;
 }
-.col-md-5 p {
+.col-md-5 p, .col-md p {
     text-align: justify;
 }
 section {
     padding-top: 5em;
+}
+.nav-link:hover {
+border-bottom: 4px solid #ffffff;
+background-color: #00ffff;
+border-radius: 0.6em;
+padding-left: 1em;
+color: rgb(0, 0, 0);
+}
+.nav-link {
+    transition: all 0.2s;
+    color: white;
+}
+#text-p {
+    text-align: justify;
 }
