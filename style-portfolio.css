@@ -1,10 +1,10 @@
 .jumbotron {
     padding-top: 6em;
-    background-color: #00ffff;
+    background-color: #A6F6FF;
 }
 
 #project {
-    background-color: #00ffff;
+    background-color: #A6F6FF;
 }
 .card-text {
     text-align: justify;
@@ -16,10 +16,10 @@ section {
     padding-top: 5em;
 }
 .nav-link:hover {
-border-bottom: 4px solid #ffffff;
-background-color: #00ffff;
-border-radius: 0.6em;
-padding-left: 1em;
+border-bottom: 2px solid #6499E9;
+background-color: #9EDDFF;
+border-radius: 0.7em;
+padding-left: 0.5em;
 color: rgb(0, 0, 0);
 }
 .nav-link {
@@ -28,4 +28,38 @@ color: rgb(0, 0, 0);
 }
 #text-p {
     text-align: justify;
+}
+.navbar {
+    background: linear-gradient(to left, #9EDDFF, #6499E9);
+}
+.nav-link {
+    color : black;
+}
+footer {
+    background-color: #A6F6FF;
+}
+#git svg:hover {
+width : 25px;
+height : 25px; 
+fill: white;
+transition: 100ms;
+}
+
+#ig svg:hover {
+width : 25px;
+height : 25px; 
+fill: white;
+transition: 100ms;
+}
+#wa svg:hover {
+width : 25px;
+height : 25px; 
+fill: white;
+transition: 100ms;
+}
+#linkedin svg:hover {
+width : 25px;
+height : 25px; 
+fill: white;
+transition: 100ms;
 }
