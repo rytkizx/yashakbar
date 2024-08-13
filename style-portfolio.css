@@ -1,65 +1,154 @@
-.jumbotron {
-    padding-top: 6em;
-    background-color: #A6F6FF;
-}
-
 #project {
-    background-color: #A6F6FF;
+  background-color: #a6f6ff;
 }
 .card-text {
-    text-align: justify;
+  text-align: justify;
 }
-.col-md-5 p, .col-md p {
-    text-align: justify;
+.col-md-5 p,
+.col-md p {
+  text-align: justify;
 }
 section {
-    padding-top: 5em;
+  padding-top: 5em;
 }
 .nav-link:hover {
-border-bottom: 2px solid #6499E9;
-background-color: #9EDDFF;
-border-radius: 0.7em;
-padding-left: 0.5em;
-color: rgb(0, 0, 0);
+  border-radius: 0.7em;
+  padding-left: 0.5em;
+  color: rgb(0, 0, 0);
 }
 .nav-link {
-    transition: all 0.2s;
-    color: white;
+  transition: all 0.2s;
+  color: white;
 }
-#text-p {
-    text-align: justify;
-}
+
 .navbar {
-    background: linear-gradient(to left, #9EDDFF, #6499E9);
+  backdrop-filter: blur(50px);
+  background-color: rgb(128, 128, 128, 0.7);
 }
 .nav-link {
-    color : black;
+  color: rgb(255, 255, 255);
 }
 footer {
-    background-color: #A6F6FF;
+  background-color: rgb(128, 128, 128, 0.7);
+  height: 80px;
 }
 #git svg:hover {
-width : 25px;
-height : 25px; 
-fill: white;
-transition: 100ms;
+  fill: white;
+  transition: ease-in-out 100ms;
 }
 
 #ig svg:hover {
-width : 25px;
-height : 25px; 
-fill: white;
-transition: 100ms;
+  fill: white;
+  transition: ease-in-out 100ms;
 }
 #wa svg:hover {
-width : 25px;
-height : 25px; 
-fill: white;
-transition: 100ms;
+  fill: white;
+  transition: ease-in-out 100ms;
 }
 #linkedin svg:hover {
-width : 25px;
-height : 25px; 
-fill: white;
-transition: 100ms;
+  fill: white;
+  transition: ease-in-out 100ms;
+}
+/*jumbotron */
+.navbar-brand:hover {
+  color: rgb(0, 0, 0);
+  transition: ease-in-out 300ms;
+}
+
+.navbar-brand {
+  color: white;
+}
+.carousel-item {
+  width: 100%;
+  height: 100vh;
+  filter: brightness(20%);
+}
+.logo {
+  height: 30px;
+  filter: grayscale();
+}
+.carousel .gambar img {
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+
+/*jumbotron akhir */
+
+/* about */
+#about {
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(83, 83, 83));
+  color: white;
+}
+#text-p {
+  text-align: justify;
+  text-indent: 40px;
+}
+
+.line-about {
+  width: 40%;
+  height: 3px;
+  background-color: white;
+  display: flex;
+}
+
+.skill .col-6 {
+  margin: 10px;
+  outline: 2px solid rgb(178, 198, 0);
+  padding: 5px;
+  align-items: center;
+}
+.skill .col:hover {
+  background-color: yellow;
+  transition: ease-in-out 0.3s;
+}
+/* about akhir */
+
+/* project */
+#project {
+  background-color: rgb(152, 152, 152);
+}
+/* project akhir */
+
+/* contact */
+#contact {
+  background: linear-gradient(to top, rgb(128, 128, 128, 0.7), rgb(83, 83, 83));
+}
+/* contact akhir */
+
+/*untuk laptop */
+@media (min-width: 1024px) {
+  .carousel .gambar {
+    position: absolute;
+    z-index: 10;
+    padding-left: 13%;
+    padding-top: 20%;
+    margin-left: 10%;
+  }
+}
+
+/* untuk Hp */
+@media (max-width: 768px) {
+  .carousel .gambar {
+    position: absolute;
+    z-index: 10;
+    padding-top: 30%;
+    text-align: center;
+  }
+  .carousel .gambar p {
+    text-align: center;
+  }
+  /* about skill */
+  .skill .col-6 {
+    width: auto;
+  }
+  /* about skill */
+}
+
+/* untuk tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .carousel .gambar {
+    position: absolute;
+    z-index: 10;
+    padding-left: 13%;
+    padding-top: 20%;
+  }
 }
