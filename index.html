@@ -29,6 +29,20 @@
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- aos akhir -->
+
+    <!-- link email js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "OMoSs5RmVOns2zr3a",
+        });
+      })();
+    </script>
+    <!-- link email js akhir -->
   </head>
 
   <body class="" id="home">
@@ -207,7 +221,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form>
+            <form id="contact-form">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama Lengkap</label>
                 <input
@@ -215,6 +229,7 @@
                   class="form-control"
                   id="name"
                   aria-describedby="name"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -224,11 +239,17 @@
                   class="form-control"
                   id="email"
                   aria-describedby="email"
+                  required
                 />
               </div>
               <div class="mb-3">
-                <label for="pesan" class="form-label">Massage</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <label for="pesan" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="pesan"
+                  rows="3"
+                  required
+                ></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Send</button>
             </form>
