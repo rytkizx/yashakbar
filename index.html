@@ -30,27 +30,23 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- aos akhir -->
 
-    <!-- link email js -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "OMoSs5RmVOns2zr3a",
-        });
-      })();
-    </script>
-    <!-- link email js akhir -->
+    <!-- sweet alert -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.min.css"
+    />
+    <!-- sweet alert akhir-->
   </head>
 
   <body class="" id="home">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-light shadow fixed-top"
+      id="navbar"
+    >
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img class="logo" src="img/logo ku.png" alt="" />
+          <img class="logo" src="img/logo ku.png" alt="logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -175,7 +171,7 @@
               aktif di berbagai organisasi. Saya percaya bahwa menggabungkan
               kompetensi akademis dengan keterampilan kreatif dapat menciptakan
               solusi inovatif untuk tantangan masa depan. Minat saya yang
-              mendalam dalam pemrograman, desain grafis, dan learning design
+              mendalam dalam learning design, desain grafis, dan pemrograman
               semakin memperkaya pengalaman saya.
             </p>
             <p id="text-p" data-aos="zoom-in-down">
@@ -206,7 +202,7 @@
           </div>
         </div>
         <button class="btn btn-outline-light" type="button">Tech</button>
-        <button class="btn btn-outline-light" type="button">tools</button>
+        <button class="btn btn-outline-light ms-3" type="button">tools</button>
       </div>
     </section>
     <!-- akhir about -->
@@ -355,14 +351,26 @@
       </div>
     </footer>
     <!-- akhir footer -->
+    <!-- js boostrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
 
-    <!-- link js -->
-    <script src="script.js"></script>
+    <!-- link email js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "OMoSs5RmVOns2zr3a",
+        });
+      })();
+    </script>
+    <!-- link email js akhir -->
 
     <!-- link js aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -372,5 +380,12 @@
       });
     </script>
     <!-- link js aos akhir -->
+
+    <!-- js sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.all.min.js"></script>
+    <!-- js sweet alert akhir -->
+
+    <!-- link js -->
+    <script src="script.js"></script>
   </body>
 </html>

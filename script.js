@@ -1,3 +1,4 @@
+// js email
 function sendMail(event) {
   event.preventDefault(); // Mencegah halaman reload
 
@@ -12,12 +13,26 @@ function sendMail(event) {
   emailjs
     .send("service_zjnpbkd", "template_4tfckqw", parms)
     .then(() => {
-      alert("Email Sent!!");
+      // alert("Email Sent!!");
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Your email has been sent",
+        showConfirmButton: false,
+        timer: 1500,
+      });
       document.getElementById("contact-form").reset(); // Reset form setelah pengiriman
     })
     .catch((error) => {
       console.error("Error sending email: ", error);
-      alert("Failed to send email.");
+      // alert("Failed to send email.");
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "Error sending email",
+        showConfirmButton: false,
+        timer: 1500,
+      });
     });
 }
 
